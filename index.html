@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEXY PERFUME</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-black': '#121212',
+            'accent-gold': '#DAA520',
+            'highlight-red': '#DC143C',
+          },
+          fontFamily: {
+            sans: ['Cormorant', 'sans-serif'],
+            serif: ['Cinzel', 'serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+    }
+  </style>
+</head>
+<body class="bg-primary-black text-white font-sans">
+
+  <!-- Header -->
+  <header class="p-4 border-b border-gray-800">
+    <nav class="container mx-auto flex justify-between items-center">
+      <a href="#">
+        <h1 class="text-2xl font-bold font-serif text-accent-gold">SEXY PERFUME</h1>
+      </a>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="hover:text-accent-gold transition-colors">Home</a></li>
+        <li><a href="#" class="hover:text-accent-gold transition-colors">Shop</a></li>
+        <li><a href="#" class="hover:text-accent-gold transition-colors">About</a></li>
+        <li><a href="#" class="hover:text-accent-gold transition-colors">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center">
+      <div class="absolute inset-0">
+        <img src="sexy-perfume-platform/public/hero-image.jpg" alt="Sexy perfume model" class="w-full h-full object-cover opacity-40">
+      </div>
+      <div class="relative z-10 p-4">
+        <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-4" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5)">
+          Unleash Your Inner Scent
+        </h1>
+        <p class="text-lg md:text-xl text-gray-200 mb-8" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5)">
+          Discover the fragrance that defines you.
+        </p>
+        <button class="bg-accent-gold text-primary-black font-bold py-3 px-8 rounded-full hover:bg-yellow-600 transition-colors transform hover:scale-105">
+          Shop Now
+        </button>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="container mx-auto py-20">
+      <h2 class="text-4xl font-serif font-bold text-center mb-12 text-accent-gold">
+        Our Collection
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Product Card 1 -->
+        <div class="border border-gray-800 rounded-lg p-4 transition-transform transform hover:scale-105 hover:border-accent-gold">
+          <div class="relative w-full h-64 mb-4">
+            <img src="sexy-perfume-platform/public/hero-image.jpg" alt="Obsidian Elixir" class="w-full h-full object-cover rounded-md">
+          </div>
+          <h2 class="text-xl font-serif font-bold text-accent-gold">Obsidian Elixir</h2>
+          <p class="mt-2 text-gray-400">A dark and mysterious fragrance with notes of black orchid and spice.</p>
+          <p class="mt-4 text-lg font-bold">$120.00</p>
+          <button class="mt-4 w-full bg-accent-gold text-primary-black font-bold py-2 px-4 rounded-full hover:bg-yellow-600 transition-colors">
+            Add to Cart
+          </button>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="border border-gray-800 rounded-lg p-4 transition-transform transform hover:scale-105 hover:border-accent-gold">
+          <div class="relative w-full h-64 mb-4">
+            <img src="sexy-perfume-platform/public/hero-image.jpg" alt="Golden Ember" class="w-full h-full object-cover rounded-md">
+          </div>
+          <h2 class="text-xl font-serif font-bold text-accent-gold">Golden Ember</h2>
+          <p class="mt-2 text-gray-400">A warm and inviting scent with hints of amber and vanilla.</p>
+          <p class="mt-4 text-lg font-bold">$110.00</p>
+          <button class="mt-4 w-full bg-accent-gold text-primary-black font-bold py-2 px-4 rounded-full hover:bg-yellow-600 transition-colors">
+            Add to Cart
+          </button>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="border border-gray-800 rounded-lg p-4 transition-transform transform hover:scale-105 hover:border-accent-gold">
+          <div class="relative w-full h-64 mb-4">
+            <img src="sexy-perfume-platform/public/hero-image.jpg" alt="Crimson Night" class="w-full h-full object-cover rounded-md">
+          </div>
+          <h2 class="text-xl font-serif font-bold text-accent-gold">Crimson Night</h2>
+          <p class="mt-2 text-gray-400">A bold and passionate aroma with notes of red rose and leather.</p>
+          <p class="mt-4 text-lg font-bold">$130.00</p>
+          <button class="mt-4 w-full bg-accent-gold text-primary-black font-bold py-2 px-4 rounded-full hover:bg-yellow-600 transition-colors">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="p-4 mt-8 border-t border-gray-800 text-center">
+    <div class="container mx-auto">
+      <p>&copy; 2024 SEXY PERFUME. All rights reserved.</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <!-- Add social media icons here -->
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
